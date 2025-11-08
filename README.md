@@ -1,1 +1,1 @@
-# City-On-The-Hill-Church
+# Eternal-Faith-And-Truth-Christian-Ministries
