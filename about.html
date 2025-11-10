@@ -12,42 +12,42 @@
         body {
             box-sizing: border-box;
         }
-        
+       
         .hero-gradient {
             background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #f59e0b 100%);
         }
-        
+       
         .text-gradient {
             background: linear-gradient(135deg, #f59e0b, #fbbf24);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+       
         .card-hover {
             transition: all 0.3s ease;
         }
-        
+       
         .card-hover:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
-        
+       
         .btn-primary {
             background: linear-gradient(135deg, #f59e0b, #fbbf24);
             transition: all 0.3s ease;
         }
-        
+       
         .btn-primary:hover {
             background: linear-gradient(135deg, #d97706, #f59e0b);
             transform: translateY(-2px);
             box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
         }
-        
+       
         .timeline-item {
             position: relative;
         }
-        
+       
         .timeline-item::before {
             content: '';
             position: absolute;
@@ -58,7 +58,7 @@
             background: linear-gradient(to bottom, #f59e0b, #3b82f6);
             transform: translateX(-50%);
         }
-        
+       
         .timeline-dot {
             position: absolute;
             left: 50%;
@@ -71,7 +71,7 @@
             transform: translateX(-50%);
             z-index: 10;
         }
-        
+       
         @media (max-width: 768px) {
             .timeline-item::before {
                 left: 1rem;
@@ -93,7 +93,7 @@
                         <p class="text-xs text-gray-600">Truth Christian Ministries</p>
                     </div>
                 </div>
-                
+               
                 <!-- Desktop Menu -->
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
@@ -105,7 +105,7 @@
                         <a href="#contact" class="text-gray-700 hover:text-yellow-500 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
                     </div>
                 </div>
-                
+               
                 <!-- Contact Info -->
                 <div class="hidden lg:flex items-center space-x-4">
                     <a href="tel:+254712920051" class="text-blue-800 hover:text-yellow-500 text-sm">
@@ -115,7 +115,7 @@
                         <i class="fab fa-whatsapp text-lg"></i>
                     </a>
                 </div>
-                
+               
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
                     <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-800 focus:outline-none">
@@ -124,7 +124,7 @@
                 </div>
             </div>
         </div>
-        
+       
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
@@ -139,8 +139,10 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-gradient text-white pt-16 pb-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section class="hero-gradient text-white pt-16 pb-20 relative overflow-hidden">
+        <img src="abouthero.jpg" alt="Eternal Faith And Truth Christian Ministries - Church Community" 
+             class="absolute inset-0 w-full h-full object-cover opacity-30" loading="lazy">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div class="text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-up">
                     About <span class="text-gradient">Our Church</span>
@@ -167,11 +169,13 @@
                     </p>
                 </div>
                 <div class="bg-blue-50 rounded-2xl p-8" data-aos="fade-left">
-                    <div class="text-center">
-                        <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <img src="mission.jpg" alt="Pastor preaching and community in prayer" 
+                         class="w-full h-64 object-cover rounded-xl shadow-md" loading="lazy">
+                    <div class="text-center mt-6">
+                        <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                             <i class="fas fa-globe text-3xl text-white"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Our Vision</h3>
                         <p class="text-gray-600 text-lg leading-relaxed">
                             To see transformed lives, strengthened families, and thriving communities as we advance God's Kingdom locally and internationally through the power of the Gospel.
                         </p>
@@ -188,7 +192,7 @@
                 <h2 class="text-4xl font-bold text-gray-800 mb-6">Our Core Values</h2>
                 <p class="text-xl text-gray-600">The principles that guide everything we do</p>
             </div>
-            
+           
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover" data-aos="fade-up" data-aos-delay="100">
                     <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -197,7 +201,7 @@
                     <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Biblical Authority</h3>
                     <p class="text-gray-600 text-center">We believe the Bible is God's inspired Word and the ultimate authority for faith and life.</p>
                 </div>
-                
+               
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover" data-aos="fade-up" data-aos-delay="200">
                     <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-heart text-2xl text-yellow-600"></i>
@@ -205,7 +209,7 @@
                     <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Authentic Love</h3>
                     <p class="text-gray-600 text-center">We demonstrate Christ's love through genuine relationships and sacrificial service.</p>
                 </div>
-                
+               
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-users text-2xl text-green-600"></i>
@@ -213,7 +217,7 @@
                     <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Community</h3>
                     <p class="text-gray-600 text-center">We foster deep connections and support one another in our spiritual journey.</p>
                 </div>
-                
+               
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover" data-aos="fade-up" data-aos-delay="400">
                     <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-praying-hands text-2xl text-purple-600"></i>
@@ -221,7 +225,7 @@
                     <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Prayer</h3>
                     <p class="text-gray-600 text-center">We depend on God through consistent prayer and seek His guidance in all things.</p>
                 </div>
-                
+               
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover" data-aos="fade-up" data-aos-delay="500">
                     <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-hands-helping text-2xl text-red-600"></i>
@@ -229,7 +233,7 @@
                     <h3 class="text-xl font-bold text-gray-800 mb-4 text-center">Service</h3>
                     <p class="text-gray-600 text-center">We serve others with humility, following Christ's example of servant leadership.</p>
                 </div>
-                
+               
                 <div class="bg-white rounded-xl p-8 shadow-lg card-hover" data-aos="fade-up" data-aos-delay="600">
                     <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
                         <i class="fas fa-seedling text-2xl text-indigo-600"></i>
@@ -248,7 +252,7 @@
                 <h2 class="text-4xl font-bold text-gray-800 mb-6">Our Journey</h2>
                 <p class="text-xl text-gray-600">God's faithfulness through the years</p>
             </div>
-            
+           
             <div class="relative">
                 <div class="timeline-item mb-16" data-aos="fade-up" data-aos-delay="100">
                     <div class="timeline-dot"></div>
@@ -260,21 +264,23 @@
                             </p>
                         </div>
                         <div class="bg-blue-50 rounded-xl p-6">
+                            <img src="timeline1.jpg" alt="Church foundation ceremony" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
                             <div class="text-center">
-                                <i class="fas fa-church text-4xl text-blue-600 mb-4"></i>
+                                <i class="fas fa-church text-4xl text-blue-600 mb-2"></i>
                                 <h4 class="text-lg font-semibold text-gray-800">Foundation Laid</h4>
                                 <p class="text-gray-600">Built on the Rock of Christ</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+               
                 <div class="timeline-item mb-16" data-aos="fade-up" data-aos-delay="200">
                     <div class="timeline-dot"></div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div class="bg-yellow-50 rounded-xl p-6 md:order-1">
+                            <img src="timeline2.jpg" alt="Growing church community" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
                             <div class="text-center">
-                                <i class="fas fa-users text-4xl text-yellow-600 mb-4"></i>
+                                <i class="fas fa-users text-4xl text-yellow-600 mb-2"></i>
                                 <h4 class="text-lg font-semibold text-gray-800">Growing Community</h4>
                                 <p class="text-gray-600">Families and individuals joining</p>
                             </div>
@@ -287,7 +293,7 @@
                         </div>
                     </div>
                 </div>
-                
+               
                 <div class="timeline-item mb-16" data-aos="fade-up" data-aos-delay="300">
                     <div class="timeline-dot"></div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
@@ -298,21 +304,23 @@
                             </p>
                         </div>
                         <div class="bg-green-50 rounded-xl p-6">
+                            <img src="timeline3.jpg" alt="Global mission outreach" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
                             <div class="text-center">
-                                <i class="fas fa-globe-africa text-4xl text-green-600 mb-4"></i>
+                                <i class="fas fa-globe-africa text-4xl text-green-600 mb-2"></i>
                                 <h4 class="text-lg font-semibold text-gray-800">Global Impact</h4>
                                 <p class="text-gray-600">Reaching nations for Christ</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+               
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
                     <div class="timeline-dot"></div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div class="bg-purple-50 rounded-xl p-6 md:order-1">
+                            <img src="timeline4.jpg" alt="Modern church service today" class="w-full h-48 object-cover rounded-lg mb-4" loading="lazy">
                             <div class="text-center">
-                                <i class="fas fa-arrow-up text-4xl text-purple-600 mb-4"></i>
+                                <i class="fas fa-arrow-up text-4xl text-purple-600 mb-2"></i>
                                 <h4 class="text-lg font-semibold text-gray-800">Continuing Forward</h4>
                                 <p class="text-gray-600">Building for the future</p>
                             </div>
@@ -329,20 +337,21 @@
         </div>
     </section>
 
-    <!-- Leadership Team -->
+    <!-- Leadership Team - ONLY SENIOR PASTOR, CENTERED -->
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-4xl font-bold text-gray-800 mb-6">Our Leadership</h2>
-                <p class="text-xl text-gray-600">Shepherds called to serve God's people</p>
+                <p class="text-xl text-gray-600">Shepherd called to serve God's people</p>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
-                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 h-48 flex items-center justify-center">
-                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-4xl text-blue-600"></i>
-                        </div>
+           
+            <!-- Centered Single Card -->
+            <div class="flex justify-center">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover max-w-md w-full" data-aos="fade-up">
+                    <div class="h-64 bg-gradient-to-br from-blue-500 to-blue-600 relative overflow-hidden">
+                        <img src="senior-pastor.jpg" alt="Senior Pastor - Eternal Faith And Truth Christian Ministries" 
+                             class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     </div>
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-gray-800 mb-2">Senior Pastor</h3>
@@ -352,49 +361,21 @@
                         </p>
                     </div>
                 </div>
-                
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
-                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 h-48 flex items-center justify-center">
-                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-4xl text-purple-600"></i>
-                        </div>
-                    </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Associate Pastor</h3>
-                        <p class="text-purple-600 font-semibold mb-3">Discipleship & Growth</p>
-                        <p class="text-gray-600 text-sm">
-                            Dedicated to helping believers grow in their faith and develop into mature disciples of Christ.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
-                    <div class="bg-gradient-to-br from-green-500 to-green-600 h-48 flex items-center justify-center">
-                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
-                            <i class="fas fa-user text-4xl text-green-600"></i>
-                        </div>
-                    </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Worship Pastor</h3>
-                        <p class="text-green-600 font-semibold mb-3">Music & Worship</p>
-                        <p class="text-gray-600 text-sm">
-                            Leading our congregation in heartfelt worship and creating an atmosphere for God's presence.
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- Call to Action -->
-    <section class="py-20 bg-blue-800 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section class="py-20 bg-blue-800 text-white relative overflow-hidden">
+        <img src="cta.jpg" alt="Welcome to church - happy family and community" 
+             class="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div data-aos="fade-up">
                 <h2 class="text-4xl font-bold mb-6">Join Our Church Family</h2>
                 <p class="text-xl mb-8 max-w-3xl mx-auto">
                     We'd love to welcome you into our community of believers. Come as you are and discover God's amazing plan for your life.
                 </p>
-                
+               
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <button class="btn-primary text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg">
                         Visit This Sunday
@@ -429,7 +410,7 @@
                         </a>
                     </div>
                 </div>
-                
+               
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
                     <ul class="space-y-2">
@@ -437,10 +418,10 @@
                         <li><a href="services.html" class="text-gray-300 hover:text-yellow-400 transition-colors">Services</a></li>
                         <li><a href="ministries.html" class="text-gray-300 hover:text-yellow-400 transition-colors">Ministries</a></li>
                         <li><a href="sermons.html" class="text-gray-300 hover:text-yellow-400 transition-colors">Sermons</a></li>
-                        <li><a href="contact.html" class="text-gray-300 hover:text-yellow-400 transition-colors">Sermons</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-yellow-400 transition-colors">Contact</a></li>
                     </ul>
                 </div>
-                
+               
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Service Times</h4>
                     <ul class="space-y-2 text-gray-300">
@@ -450,13 +431,13 @@
                         <li>Wednesday: 9:30 PM</li>
                     </ul>
                 </div>
-                
+               
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
                     <ul class="space-y-2 text-gray-300">
                         <li>
                             <i class="fas fa-phone mr-2"></i>
-                            <a href="tel:+254712920051" class="hover:text-yellow-400 transition-colors">+25412920051</a>
+                            <a href="tel:+254712920051" class="hover:text-yellow-400 transition-colors">+254 71292 0051</a>
                         </li>
                         <li>
                             <i class="fab fa-whatsapp mr-2"></i>
@@ -469,7 +450,7 @@
                     </ul>
                 </div>
             </div>
-            
+           
             <div class="border-t border-gray-700 mt-12 pt-8 text-center">
                 <p class="text-gray-300">&copy; 2025 Eternal Faith & Truth Christian Ministries. All rights reserved.</p>
             </div>
@@ -477,38 +458,22 @@
     </footer>
 
     <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
-
-        // Mobile menu toggle
+        AOS.init({ duration: 1000, once: true, offset: 100 });
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-
-        // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
-                // Close mobile menu if open
                 mobileMenu.classList.add('hidden');
             });
         });
-
-        // Add scroll effect to navigation
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 100) {
@@ -518,5 +483,5 @@
             }
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'990be60734128a67',t:'MTc2MDgzMTAxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
